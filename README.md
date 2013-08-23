@@ -1,5 +1,6 @@
 TreeView-Problem
 =======================
+v0.0
 Created a small program to highlight a problem I'm having with a TreeController serving a ListView.
 I want to have a menu show up that contains one submenu:
     item 1
@@ -24,3 +25,9 @@ all node hoping that they would all draw.
 Also, when I bind to the treeMenuController.arrangedObjects property, nothing displays.
 
 What am I doing wrong?
+
+v0.1
+Changed to make root node an actual object instead of an array [] per Keating.  Also
+sourced array from TreeController.arrangedObjects instead of TreeController.content.
+Now, the full tree displays, but when I collapse item 3, all nodes frow that one down disappear.
+Do I need to listen for changes and redraw?
